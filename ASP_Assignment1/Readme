@@ -1,0 +1,63 @@
+Name: Mohit Palliyil Sathyaseelan
+
+Subject : ASP
+
+
+
+Assignment 1 :
+Folder contains 
+1) Mapper.c
+2) Reducer.c
+3) Combiner.c
+4) Input.txt
+5) Makefile
+6) run.sh
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mapper.c
+
+Takes input.txt file where the data has been stored in form of tuples;
+The data has been split into 3 parts; UserID, action, topic
+The mapper checks the action and accordingly adds a score to the tuple;
+like : UserdID,topic,score. The mapper displays the output as well as stores
+the output in form of txt file named as Mapper_Output.txt
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Reducer.c
+
+Takes stdin Mapper_Output.txt. The reducer's main purpose is to add up the 
+same Userid,topic's score together. Since we are considering a stdin, we have
+used scanf instead of fgets for simplicity. The use of structures simplify the 
+whole process of adding up the scores. 
+> for loop logic 
+	a) first travers through userid
+	b) then scan for topics
+	c) if previous and current topics match add scores(using flag logic)
+	d) only print if its traversed through all the userid's
+	e) if topics dont match then print
+	d) go to next userid
+	
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Combiner.c 
+
+ref : https://github.com/bradfa/tlpi-dist/blob/master/pipes/pipe_ls_wc.c
+Basically the mapper will be forked first; the read pipe is unused in the first fork;
+we only use the write fork here and direct it to STDOUT.
+
+for reducer fork the write pipe is unused and the read fork is used to direct the data from STDIN.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To execute the assignment1 
+run following commands in the shell.
+make 
+make test
+
+
+
+
+for any queries please do get back
