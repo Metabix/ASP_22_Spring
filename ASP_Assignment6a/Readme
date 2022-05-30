@@ -1,1 +1,25 @@
+Name: Mohit Palliyil Sathyaseelan
 
+Subject: ASP
+
+
+
+Assignment 6a:
+Folder contains 
+1) main.c
+2) Makefile
+3) input.txt
+4) input2.txt
+5) Readme 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To execute the assignment6a
+run following commands in the shell.
+make 
+./main<input.txt
+./main<input2.txt
+
+
+for any queries please do get back
