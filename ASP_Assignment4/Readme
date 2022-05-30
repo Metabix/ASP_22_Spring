@@ -1,1 +1,25 @@
+Name: Mohit Palliyil Sathyaseelan
 
+Subject: ASP
+
+
+
+Assignment 4 :
+Folder contains 
+1) mmap.c
+2) Input.txt
+3) Makefile
+4) run.sh
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To execute the assignment4
+run following commands in the shell.
+make 
+make test
+
+
+
+
+for any queries please do get back
