@@ -1,1 +1,37 @@
+Name: Mohit Palliyil Sathyaseelan
 
+Subject : ASP
+
+
+
+Assignment 2 :
+Folder contains 
+1) Combiner.c
+2) Input.txt
+3) Makefile
+4) run.sh
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Combiner.c 
+
+For this assignment since we are using pthreads instead of processes; I have implemented mapper and reducer as a function in the combiner.c file.
+We have created n+1 threads; one for mapper and the rest for reducer( which is our arguement)
+According to your objective we need to adjust our reducer buffers according to user's choice.
+I have implemented the mapper code with reference to first assignment reducer;(removed the use of strtok)
+Mutex region has been identified; used Conditional signals. 
+
+I have used a uniq int in my struct which is additional element to my first assignment; 
+this helps me identify unique user id's since at a time one thread only calculates sum of one user id topics;
+hence this is achieved with uniq variable. The rest of the code is similar to First assignment. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To execute the assignment2
+run following commands in the shell.
+make 
+make test
+
+
+
+
+for any queries please do get back
